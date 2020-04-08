@@ -38,7 +38,7 @@ void initPlayer(void)
 
 	SDL_QueryTexture(player->texture, NULL, NULL, &player->w, &player->h);
 }
-
+//Playermove bug solved
 void doPlayer(void)
 {
 	player->dx = 0;
@@ -56,7 +56,7 @@ void doPlayer(void)
 
 		player->texture = pete[0];
 	}
-
+	//Player jump power set is doe;
 	if (app.keyboard[SDL_SCANCODE_SPACE] && player->isOnGround)
 	{
 		player->riding = NULL;
